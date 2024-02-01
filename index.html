@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-lato">
+    <header>
+        <div class="flex items-center justify-center py-4 bg-gray-900 text-slate-50 font-semibold px-8 gap-10">
+            <!--image logo-->
+            <nav>
+                <ul class="flex flex-row gap-6  items-baseline">
+                    <div class="flex items-center mr-6 mb">
+                        <div class="text-4xl">Timbo</div>
+                     </div>
+                    
+                    <div class="flex gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M11.644 1.59a.75.75 0 0 1 .712 0l9.75 5.25a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.712 0l-9.75-5.25a.75.75 0 0 1 0-1.32l9.75-5.25Z" />
+                            <path d="m3.265 10.602 7.668 4.129a2.25 2.25 0 0 0 2.134 0l7.668-4.13 1.37.739a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.71 0l-9.75-5.25a.75.75 0 0 1 0-1.32l1.37-.738Z" />
+                            <path d="m10.933 19.231-7.668-4.13-1.37.739a.75.75 0 0 0 0 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 0 0 0-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 0 1-2.134-.001Z" />
+                          </svg>
+                          
+                        <li>Produtos</li> 
+                    </div>
+
+                    <div class="flex gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 0 1-.879 2.121l-2.377 2.377a9.845 9.845 0 0 1 5.091 1.013 8.315 8.315 0 0 0 5.713.636l.285-.071-3.954-3.955a3 3 0 0 1-.879-2.121v-5.02a23.614 23.614 0 0 0-3 0Zm4.5.138a.75.75 0 0 0 .093-1.495A24.837 24.837 0 0 0 12 2.25a25.048 25.048 0 0 0-3.093.191A.75.75 0 0 0 9 3.936v4.882a1.5 1.5 0 0 1-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0 1 15 8.818V3.936Z" clip-rule="evenodd" />
+                          </svg>
+
+                          <li>Serviços</li>   
+                    </div>
+
+                    <div class="flex gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                        </svg>
+                          
+                         <li>Promoções</li> 
+                    </div>
+                </ul>    
+            </nav>
+            
+            <!--searchbar-->
+            <div class="">
+                <form action="search" method="get">
+                    <input type="text" name="search" placeholder="O que está a procura" class="border border-solid px-4 py-3 rounded-full font-normal w-96" >
+                </form>
+            </div>
+
+            <div class="flex gap-4">
+                <div class="flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                    </svg>
+                    <p>Iniciar Sessão</p>
+                </div>
+    
+                <div class="flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
+                    </svg>
+                    <p>Seu Cesto</p>
+                </div>
+            </div>
+              
+    
+        </div>
+
+        <!--Main part-->
+        <div class="bg-slate-100 pb-5 flex pt-11">
+
+
+            <!--aside part-->
+            <div class="flex justify-center"> 
+                <aside class="flex w-64">
+                    <div class="flex flex-col gap-4 leading-8 whitespace-nowrap">
+                        <div>
+                            <div class="font-semibold text-2xl">Entregas Express</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-15min" name="entrega-option" value="15min">
+                                <label>15 min gratis em Loja</label>
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-2horas" name="entrega-option" value="2hours">
+                                <label>2 horas em casa</label>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="font-semibold text-2xl">Melhores Escolhas</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="em-campanha" name="melhor-escolha" value="campanha">
+                                <label>Em campanha</label>
+                            </div>
+                            <div class="flex gap-2">
+
+                                <input type="checkbox" id="ultimas-novidades" name="melhor-escolha" value="ultimas-novidades">
+                                <label>Ultimas Unidades</label>
+                            </div>
+                            <div class="flex gap-2">
+
+                                <input type="checkbox" id="Novidades" name="melhor-escolha" value="novidades">
+                                <label>Novidades</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Desconto Direito</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>De 20% a 30%</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>De 30% a 50%</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Superior a 50%</div>              
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Entrega estimada em</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>24 horas uteis</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Ate 2 dias uteis</div>
+                            
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Ate 4 dias uteirs</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Estado</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Novo</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Recondicionado</div>  
+                            </div> 
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Marca</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Apple</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Asus</div>
+                            
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>HP</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Lenovo</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>MSI</div>
+                                
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Dell</div>      
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Tamanho do Ecrã</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Até 11"</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>12'' a 14''</div>  
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                15'' a 16'' 
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Superior a 17''</div>  
+                            </div> 
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Sistema Operativo</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Windows</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Chrome OS</div>  
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                mac OS
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Sem Sistema (FreeDOS)</div>  
+                            </div> 
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Idioma de Teclado</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Português</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Mais idiomas</div>  
+                            </div> 
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Armazenamento SSD</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>2 TB SSD</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>1 TB SSD</div>  
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                512 GB SSD
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>256 GB SSD</div>  
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>128 GB SSD</div>  
+                            </div> 
+                        </div>
+
+
+                        <div>
+                            <div class="font-semibold text-2xl">Armazenamento HDD</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>1 TB HDD</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>500 GB HDD</div>  
+                            </div> 
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Resolução Ecrã</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>3840x2160 (4K Ultra HD)</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>2880x1620</div>  
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                1920x1080 (Full HD)
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>1366x768 (FWXGA) </div>  
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>2560x1600 (WQXGA)</div>  
+                            </div> 
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Peso</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>Até 1.5 kg</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                <div>1.6 kg a 2 kg</div>  
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                Superior a 2 kg
+                            </div> 
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-2xl">Cor Principal</div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="color" name="color" value="branco">
+                                <div>Branco</div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="color" name="color" value="dourado">
+                                <div>Dourado</div>  
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                Azul 
+                            </div> 
+
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                Cinzento 
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                Preto
+                            </div> 
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="entrega-gratis" name="entrega-gratis" value="entrega">
+                                Prateado
+                            </div> 
+                        </div>
+                    </div>
+                </aside>
+
+
+                <!--main part-->
+                
+                <div class="grid lg:grid-cols-4 sm:grid-cols-3 aspect-w-2 aspect-h-3 gap-y-3 gap-x-3 px-3 w-4/5">
+                    <div class="flex flex-col items-center ">
+                        <img src="./images/logo/mac1.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 1488,00</div>
+                            <div class="text-sm font-semibold">
+                                MacBook Air APPLE Meia-Noite (13.6'' - Apple M2 8-core - RAM: 8 GB - 512 GB SSD - GPU 8-core)      </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--2nd img-->
+                    <div class="flex flex-col items-center">
+                        <img src="./images/logo/more-img.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white  h-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 299,99</div>
+                            <div class="text-sm font-semibold">
+                                Portátil LENOVO IdeaPad 3 15ALC6 (15.6'' - AMD Ryzen 7 5700U - RAM: 16 GB - 512 GB SSD PCIe - AMD Radeon Graphics)                           </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--3d image-->
+                    <div class="flex flex-col items-center">
+                        <img src="./images/logo/d0f9525091f6a93fcd1b24817646e20993dbb0bc.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white h-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 299,99</div>
+                            <div class="text-sm font-semibold">
+                                Portátil LENOVO 1 15IGL7 (Intel Celeron N4020 - Intel UHD Graphics 600 - RAM: 4 GB - 128GB SSD - 15.6'')Portátil LENOVO 1 15IGL7 (Intel Celeron N4020 - Intel UHD Graphics 600 - RAM: 4 GB - 128GB SSD - 15.6'')
+                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--4th img-->
+                    <div class="flex flex-col items-center">
+                        <img src="./images/logo/mac-3.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 989,99</div>
+                            <div class="text-sm font-semibold">
+                                Macbook Air APPLE Cinzento sideral - MGN63Y/A (13.3'' - Apple M1 - RAM: 8 GB - 256 GB SSD - GPU 7-Core) </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--5th image-->
+                    <div class="flex flex-col items-center ">
+                        <img src="./images/logo/heh.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 1999,00</div>
+                            <div class="text-sm font-semibold">
+                                Portátil Gaming ASUS ROG Strix G614JV-73A46CB1 (Intel Core i7-13650HX - NVIDIA GeForce RTX 4060 - RAM: 16 GB - 512 GB SSD - 16'')     </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--6th-->
+                    <div class="flex flex-col items-center ">
+                        <img src="./images/logo/a810ed016aadb6661ea50d33a46aa2bcd28d5281.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 549,99</div>
+                            <div class="text-sm font-semibold">
+                                Portátil HP 15s-fq2052np (Intel Core i3-1115G4 - Intel UHD Graphics - RAM: 8 GB - 256 GB SSD PCIe - 15.6'')                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--7th-->
+                    <div class="flex flex-col items-center">
+
+                        <img src="./images/logo/7-img.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 299,99</div>
+                            <div class="text-sm font-semibold">
+                                Portátil ASUS Vivobook Flip Tp1400Ka (14'' - Intel Celeron N4500 - RAM: 4 GB - 128 GB SSD - Intel UHD Graphics)
+                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--8 image-->
+                    <div class="flex flex-col items-center ">
+
+                        <img src="./images/logo/3bcf098db5ee162194bf584ce5d3499839487793.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 549,99</div>
+                            <div class="text-sm font-semibold">
+                                Portátil ASUS E1504FA-R57ALHDPB1 (AMD Ryzen 5 7520U - AMD Radeon Graphics - RAM: 16 GB - 512 GB - 15.6'')                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--9 image-->
+                    <div class="flex flex-col items-center">
+
+                        <img src="./images/logo/acer.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 629,99</div>
+                            <div class="text-sm font-semibold">
+                                Portátil ACER ASPIRE 3 A315-58-51KB (15.6" - Intel Core i5-1135G7 - RAM: 16 GB - 512 GB SSD - Intel Uma)         </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--10 image-->
+                    <div class="flex flex-col items-center">
+
+                        <img src="./images/logo/gaming.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 1199,00</div>
+                            <div class="text-sm font-semibold">
+                             Portátil ACER Nitro 16 AN16-51 (16" - Intel Core i7-13700H - RAM: 16 GB - 512 GB SSD PCIe - NVIDIA GeForce RTX 4050) </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--11 image-->
+                    <div class="flex flex-col items-center">
+
+                        <img src="./images/logo/omen.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 999,97</div>
+                            <div class="text-sm font-semibold">
+                                Portátil HP NB Omen 16-XD0009NP (16.1" - AMD Ryzen 7 7840HS - RAM: 16 GB - 512 GB SSD PCIe - NVIDIA GeForce RTX 4050)                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--12 image-->
+                    <div class="flex flex-col items-center ">
+
+                        <img src="./images/logo/more-img.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 299,99</div>
+                            <div class="text-sm font-semibold">
+                                Portátil HP PAVILLION 14-EW0004NP (14 - Intel Core i5-1335U - RAM:16 GB - 512 GB Flash PCIe - Intel Iris Xe Graphics)                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--13 image-->
+                    <div class="flex flex-col items-center">
+
+                        <img src="./images/logo/dell.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 6545,00</div>
+                            <div class="text-sm font-semibold">
+                                Portátil DELL 63705 5524 (17 '' - Intel® Core™ i7 i7-12800H - RAM: 32 GB - 512 GB SSD)                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--14 image-->
+                    <div class="flex flex-col items-center ">
+
+                        <img src="./images/logo/ver-exp.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 4709,98</div>
+                            <div class="text-sm font-semibold">
+                                Portátil HP 72161 (16'' - Intel® Core™ i7 i7-12800HX - RAM: 16 GB - 512 GB SSD - Intel® UHD Graphics)                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--15 image-->
+                    <div class="flex flex-col items-center ">
+
+                        <img src="./images/logo/exp-mac.webp" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 4463,64</div>
+                            <div class="text-sm font-semibold">
+                                MacBook Pro APPLE Cinzento Sideral (16'' - Apple M2 Max 12-core - RAM: 32 GB - 1 TB SSD - GPU 38-core)                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--16 img-->
+                    <div class="flex flex-col items-center">
+
+                        <img src="images/logo/last-img.jpg" alt="PC">
+
+                        <div class="flex flex-col items-center text-center gap-2 bg-white pb-10 h-full w-full">
+                            <div class="text-2xl font-bold text-red-600"> &euro; 4395,65</div>
+                            <div class="text-sm font-semibold">
+                                Portátil DELL 63705 5525 (16 '' - Intel® Core™ i7 i7-13850HX - RAM: 32 GB - 1000 GB SSD - NVIDIA RTX 2000)                            </div>
+                            <div class="text-sm">
+                                Vendido por <span class="font-semibold">Timbo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
